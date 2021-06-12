@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0
+}
+/*
+body{
+	overflow: hidden
+}
+*/
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+	background: #F8CA59
+}
+header{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1000;
+}
+nav{
+	background: #F8CA59;
+	margin-left: 600px;
+	width: 400px;
+	height: 50px;
+	position: fixed;
+}
+nav ul{
+	height: 30px;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
+/*	background: grey;*/
+}
+nav  ul li{
+	padding: 10px;
+	box-sizing: border-box;
+}
+nav ul  li  a{
+	text-decoration: none;
+	color: black;
+	font-family: "Koho" ,sans-serif;
+	transform: translateY(-90deg)
+}
+nav ul li a:hover{
+	color: aqua;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+/*
+.padding-grid{
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+*/
+.col-1{
+	width: 8.33%;
+}
+.col-2{
+	width: 16.66%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.33%;
+}
+.col-5{
+	width: 41.66%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.33%;
+}
+.col-8{
+	width: 66.64%;
+}
+.col-9{
+	width: 74.97%
+}
+.col-10{
+	width: 83.3%
+}
+.col-11{
+	width: 91.63%
+}
+.col-12{
+	width: 100%;
+}
+.banner{
+	height: 800px;
+}
+.banner img{
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+}
+.NHA{
+	position: relative;
+	width: 52%;
+	top:-122px;
+	left: 546px;
+	z-index: 100;
+/*	background: #F8CA59;*/
+	animation: run 2.5s 2s infinite linear;
+}
+@keyframes run{
+	from{
+		transform: translateY(0)
+	}
+	to{
+		transform: translateY(-165px)
+	}
+}
+.about{
+	width: 100%;
+	padding: 50px;
+/*	background: #723817;*/
+	position: relative;
+	display: flex;
+}
+.col-4 a img{
+	width: 450px;
+	animation: xoay 2s 2s infinite linear;
+	animation-direction: alternate
+}
+@keyframes  xoay{
+	from{
+		transform: rotate(-50deg)
+	}
+	to{
+		transform: rotate(50deg)
+	}
+}
+.col-8 .content{
+	margin: 10px 140px;
+	position: relative;
+/*	background: blue;*/
+}
+.col-8 .content h1{
+	font-size: 120px;
+	font-family: 'Raleway', sans-serif;
+  color: black;
+  -webkit-text-fill-color: white ; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.col-8 .content h2{
+	color:#723817;
+	font-size: 70px;
+	font-family: 'Koho', sans-serif;
+}
+.col-8 .content h3{
+	font-family: 'Koho', sans-serif;
+	font-size: 30px;
+}
+.col-8 .content p{
+	font-family: 'Koho', sans-serif;
+	font-size: 20px;
+	margin: 10px 0;
+}
+.Learn{
+	width: 120px;
+	height: 40px;
+	background: #F8CA59;
+	border: 0 solid;
+	line-height: 40px;
+	text-align: center;	
+}
+.Learn a{
+	font-family: 'Koho', sans-serif;
+	color:#723817;
+	text-decoration: none;
+}
+.skill{
+	width: 90%;
+	height: 500px;
+	margin: 50px;
+/*	background: #B12527;*/
+	font-size: 30px;
+	font-family: "Koho", sans-serif;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.skills {
+   text-align: right; /* canh chữ cho chữ */
+   padding-top: 10px; /* thêm top padding */
+   padding-bottom: 10px; /* thêmbottom padding */
+   color: white; /* thiết lập màu chữ */
+ }
+ .html {width: 90%; background-color: DarkOrange;} 
+ .css {width: 80%; background-color: DodgerBlue;} 
+ .js {width: 80%; background-color: aqua;}
+.clear{
+	clear:both
+}
+.porfolio{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	justify-content: space-around
+}
+.porfolio h1{
+	margin: 50px;
+	width: 100%;
+	font-size: 70px;
+	color:#723817;
+	font-family: 'Koho', sans-serif;
+	text-align: center;
+/*	background: grey;*/
+}
+.left{
+	width: 500px;
+	height: 400px;
+/*	background:#F8CA59 ;*/
+}
+.right{
+	width: 500px;
+	height: 400px;
+/*	background: #723817;*/
+}
+.box{
+	width: 500px;
+	height: 300px;
+/*	background: #FAC9CA;*/
+	overflow: hidden
+}
+.box  img{
+	width: 100%;
+}
+.left h3{
+	font-family: 'Koho', sans-serif;
+	text-align: center;
+	font-size: 30px;
+	color:#260C10
+}
+.right h3{
+	font-family: 'Koho', sans-serif;
+	text-align: center;
+	font-size: 30px;
+	color:#17598E
+}
+.left p{
+	font-family: 'Koho', sans-serif;
+	text-align: center;
+}
+.right p{
+	font-family: 'Koho', sans-serif;
+	text-align: center;
+}
+.footer{
+	height: 30px;
+	margin: 0 auto;
+	background:#723817;
+	line-height: 30px;
+	color:#F8CA59;
+	font-family: 'Koho',sans-serif;
+}
+.contact{
+	display: flex;
+	justify-content: space-between;
+}
